@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CellPhone user = new CellPhone();
+        CellPhone cellphone1 = new CellPhone();
         //Ask Questions
         System.out.print("What is the serial number? ");
         int serialNumber = scanner.nextInt();
@@ -20,18 +20,20 @@ public class CellPhoneApplication {
         String owner = scanner.nextLine();
 
         //Use setters
-        user.setSerialNumber(serialNumber);
-        user.setModel(model);
-        user.setCarrier(carrier);
-        user.setPhoneNumber(phoneNumber);
-        user.setOwner(owner);
+        cellphone1.setSerialNumber(serialNumber);
+        cellphone1.setModel(model);
+        cellphone1.setCarrier(carrier);
+        cellphone1.setPhoneNumber(phoneNumber);
+        cellphone1.setOwner(owner);
 
         //Use getters
-        System.out.println("\nSerial Number: " + user.getSerialNumber());
-        System.out.println("Model: " + user.getModel());
-        System.out.println("Carrier: " + user.getCarrier());
-        System.out.println("Phone Number: " + user.getPhoneNumber());
-        System.out.println("Owner: " + user.getOwner());
+        System.out.println("\nSerial Number: " + cellphone1.getSerialNumber());
+        System.out.println("Model: " + cellphone1.getModel());
+        System.out.println("Carrier: " + cellphone1.getCarrier());
+        System.out.println("Phone Number: " + cellphone1.getPhoneNumber());
+        System.out.println("Owner: " + cellphone1.getOwner());
+
+        scanner.close();
 
 
 
