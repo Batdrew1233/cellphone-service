@@ -27,7 +27,7 @@ public class CellPhoneApplication {
         user.setOwner(owner);
 
         //Use getters
-        System.out.println("Serial Number: " + user.getSerialNumber());
+        System.out.println("\nSerial Number: " + user.getSerialNumber());
         System.out.println("Model: " + user.getModel());
         System.out.println("Carrier: " + user.getCarrier());
         System.out.println("Phone Number: " + user.getPhoneNumber());
